@@ -1,0 +1,278 @@
+html body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+@font-face {
+	font-family: kakugai;
+	src: local("HiraKakuProN-W3");
+}
+
+@font-face {
+	font-family: kakugai;
+	unicode-range: U+FF0C,U+3002;
+	src: local("STHeitiTC-Medium");
+}
+
+.item{
+  text-align: center;
+}
+
+div.head {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	width: 100%;
+	z-index: 999;
+	background-color: #00693e;
+}
+
+img.logo {
+	height: 40px;
+	width: auto;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.white {
+	color: white;
+}
+
+.center {
+	text-align: center;
+}
+
+.content { 
+	width: 80%;
+	max-width: 800px;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(242, 242, 242, 1);
+	border-left:1px solid rgba(0, 0, 0, 0.1);
+	border-right:1px solid rgba(0, 0, 0, 0.1);
+	}
+	
+.bestseller {
+	width: 100%;
+	height: 440px;
+	background-color: rgba(77, 76, 76, 1);
+	padding: 10px 0;
+}
+
+.book {
+	width: 30%;
+	text-align: center;
+	float: left;
+	background-color: inherit;
+	margin-right: 2.5%;
+}
+
+.first {
+	margin-left: 2.5%;
+}
+
+.cover {
+	height: 200px;
+	width: auto;
+}
+
+
+
+blockquote {
+	margin: 0.5em 0 1em 0;
+	padding: 0.5em 1em;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius:10px;
+	box-shadow: 3px 3px 3px rgba(150, 150, 150, 0.3);
+}
+	
+blockquote p{
+	 
+	font-family: /*"STKaiTi-TC-Regular","Biaukai","DFKai-SB"*/kakugai, sans-serif;
+	color: rgba(0, 0, 0, 0.8);
+	padding: 0;
+	margin: 0;
+	
+}
+	
+em {
+	font-family: serif;
+	font-weight: bold;
+	font-style: normal;
+	-ms-text-emphasis: dot filled black;
+	-ms-text-emphasis-position: under;
+	text-emphasis: dot filled black;
+	text-emphasis-position: under;
+}
+
+a { 
+	color: black;
+	border: 1px solid gray;
+	border-radius: 1px;
+	padding: 3px 5px;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.1);
+	line-height: 2;
+	display: inline-block;
+	margin-bottom: 3px;
+}
+
+::selection {
+	background: #00693e;
+	color: white;
+}
+
+a:hover,a:focus,a:active {
+	background: #00693e;
+	color: white;
+
+}
+
+strong {	
+	font-weight: bold;
+	}
+	
+p {
+	/* OS X: 宋體繁、Windows: 新細明體、OS X: 黑體繁、Android: Droid Sans Fallback or Noto Hans Sans*/
+	font-family: "STSongti-TC-Regular","PMingLiU","SourceHanSansTC-Medium","Microsoft JhengHei","STHeitiTC","DroidSans",serif;
+	line-height: 1.8;
+	text-align: justify;
+	text-justify: inter-ideograph;
+　	-ms-text-justify: inter-ideograph; /*IE9*/
+　	-moz-text-align-last:justify; /*Firefox*/
+　	-webkit-text-align-last:justify; /*Chrome*/	
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 0.9em;
+}
+
+p.title {
+	height: 3em;
+	display: block;
+	margin: 5px 0;
+}
+
+figcaption {
+	width: 540px;
+	margin-left: 20px;
+}
+
+figcaption p {
+	font-family: sans-serif;
+	font-size: 16px;
+	margin-top: 0;
+	line-height: 1.3;
+}
+
+
+
+h2 {
+	/* OS X: Hiramin、Windows: 新細明體、OS X: Hiramin、Android: Droid Sans Fallback or Noto Hans Sans*/
+	font-family: "Hiragino Mincho ProN","YuMin-Demibold",serif;
+	text-align: center;
+	font-size: 24px;
+	line-height: 1.3;
+}
+/*
+.byline {
+		text-align: center;
+		margin: 0.5em 0;
+
+}
+
+h3 {
+	font-family: sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0.7em 0 0.5em 0;
+	}
+	
+	.portrait {
+	width: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 20px;
+}
+
+*/
+	
+figure {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	width: 540px;
+	margin-top: 0.5em;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+@media screen and (max-device-width: 480px) {
+    
+.cover {
+	height: 130px;
+	width: auto;
+}
+    
+blockquote p {
+	text-indent: 0;
+}
+    
+.content {
+	width: 100%;
+	margin: 60px 0 0 0;
+	padding: 0;
+	border: none;
+
+}
+
+.bestseller {
+	margin: 0;
+	height: 350px;
+}
+
+h2 {font-size: 24px;}
+
+p {
+	margin-bottom: 0;
+	font-size: 10px;
+}
+
+a {
+	font-size: 80%;
+}
+
+img {
+	width: 100%;
+	margin: 0.5em 0;
+	
+}
+
+figcaption p {
+	font-family: sans-serif;
+	font-size: 14px;
+	text-indent: 0;
+
+	font-weight: bold;
+}
+
+figcaption {
+	width: auto;
+	margin-bottom: 1em;
+	margin-left: 0;
+}
+
+figure {
+	border-bottom: 1px solid gray;
+	border-top: 1px solid gray;
+	padding: 0.5em 0;
+
+}
+
+}
